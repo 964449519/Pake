@@ -262,8 +262,8 @@ jobs:
         if: runner.os == 'Windows'
         uses: actions/upload-artifact@v6
         with:
-          name: ${{ inputs.name }}-Windows
-          path: src-tauri/target/**/release/bundle/msi/*.msi
+          name: Windows-MSI
+          path: "*.msi"
           retention-days: 3
 
       - name: Rust cache store
